@@ -1,0 +1,7 @@
+<input [(ngModel)]="name" type="text" class="form-control" placeholder="Your Name" required>
+<input [(ngModel)]="email" type="email" class="form-control" placeholder="Your Email" required>
+<input [(ngModel)]="phone" type="text" class="form-control" placeholder="Your Phone" required>
+<input [(ngModel)]="subject" type="text" class="form-control" placeholder="Subject" required>
+<textarea [(ngModel)]="message" rows="10" class="form-control message" placeholder="Message" required></textarea>
+<button type="submit" class="quote-btn" (click)="sendMessage()">Send</button>
+<p>response here</p>

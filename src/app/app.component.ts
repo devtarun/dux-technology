@@ -1,3 +1,4 @@
+import { AppService } from './services/app.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-dux';
+  title = 'DUX Technology';
+  constructor(public App: AppService) { }
 }
