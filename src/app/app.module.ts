@@ -19,6 +19,8 @@ import { GraphicsLogoDesignComponent } from './components/services/graphics-logo
 import { DomainHostingComponent } from './components/services/domain-hosting/domain-hosting.component';
 import { BulkSmsComponent } from './components/services/bulk-sms/bulk-sms.component';
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { QuoteFormComponent } from './components/quote-form/quote-form.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]

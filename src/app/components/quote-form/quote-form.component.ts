@@ -17,7 +17,7 @@ export class QuoteFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sendMessage = _ => {
+  sendMessage = () => {
     console.log(this.name, this.email, this.phone, this.subject, this.message);
   }
 

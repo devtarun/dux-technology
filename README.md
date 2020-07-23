@@ -6,4 +6,4 @@ DUX Technology Website in Angular
  - Fix sending emails
  - Work in JS
  - Fix some styling issues
- - Convert to PWA
+ - Fix some PWA issues
