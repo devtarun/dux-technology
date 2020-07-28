@@ -1,0 +1,7 @@
+{
+    "*": {
+        "target": "http://duxtechnology.in/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

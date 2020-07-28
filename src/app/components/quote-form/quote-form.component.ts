@@ -1,4 +1,6 @@
+import { AppComponent } from './../../app.component';
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-quote-form',
@@ -12,13 +14,24 @@ export class QuoteFormComponent implements OnInit {
   subject;
   message;
 
-  constructor() { }
+  constructor(public AppService: AppService) { }
 
   ngOnInit(): void {
   }
 
   sendMessage = () => {
-    console.log(this.name, this.email, this.phone, this.subject, this.message);
+    let formData = {
+      name: this.name,
+      email: this.email,
+      phone: this.phone,
+      subject: this.subject,
+      message: this.message,
+      short_quote: true
+    };
+
+    this.AppService.sendMail(formData, "short_quote").subscribe(res => {
+      console.log(res);
+    });
   }
 
 }

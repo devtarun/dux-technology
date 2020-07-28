@@ -5,8 +5,8 @@
                 <div class=" col-md-6 col-sm-6">
                     <div class="topbar-left">
                         <ul>
-                            <li><a><i class="fa fa-envelope"></i> {{App.email}}</a></li>
-                            <li><a><i class="fa fa-phone"></i> {{App.phone}}</a></li>
+                            <li><a><i class="fa fa-envelope"></i> {{AppService.email}}</a></li>
+                            <li><a><i class="fa fa-phone"></i> {{AppService.phone}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -14,11 +14,11 @@
                     <div class="quote-button"><a href="get-a-quote" class="quote-btn animated infinite pulse">Get a Quote</a></div>
                     <div class="top-social">
                         <ul>
-                            <li><a href="tel://{{App.phone.split(' ').join('')}}"><i class="fab fa-skype"></i></a></li>
-                            <li><a href={{App.youtubeLink}}><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="{{App.twitterLink}}"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="{{App.facebookLink}}"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="{{App.linkedinLink}}"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="tel://{{AppService.phone.split(' ').join('')}}"><i class="fab fa-skype"></i></a></li>
+                            <li><a href={{AppService.youtubeLink}}><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="{{AppService.twitterLink}}"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="{{AppService.facebookLink}}"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="{{AppService.linkedinLink}}"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -131,16 +131,16 @@
                     <div class="footer-content">
                         <div class="footer-head">
                             <h4>Locate Us</h4>
-                            <p><i class="fas fa-map-marker"></i> {{App.address}}</p>
-                            <p><i class="fas fa-phone"></i> {{App.phone}}</p>
-                            <p><i class="fas fa-envelope"></i> {{App.email}} / {{App.gmail}}</p>
+                            <p><i class="fas fa-map-marker"></i> {{AppService.address}}</p>
+                            <p><i class="fas fa-phone"></i> {{AppService.phone}}</p>
+                            <p><i class="fas fa-envelope"></i> {{AppService.email}} / {{AppService.gmail}}</p>
                             <div class="footer-icons">
                                 <ul>
-                                    <li><a href="{{App.facebookLink}}"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="{{App.twitterLink}}"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="{{App.youtubeLink}}"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="tel://{{App.phone.split(' ').join('')}}"><i class="fab fa-skype"></i></a></li>
-                                    <li><a href="{{App.linkedinLink}}"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="{{AppService.facebookLink}}"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="{{AppService.twitterLink}}"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="{{AppService.youtubeLink}}"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="tel://{{AppService.phone.split(' ').join('')}}"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="{{AppService.linkedinLink}}"><i class="fab fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>

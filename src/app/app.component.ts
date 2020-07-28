@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DUX Technology';
-  constructor(public App: AppService) { }
+  constructor(public AppService: AppService) { }
 }
